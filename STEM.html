@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Channel Moderator Proposal</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: var(--container-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 25px;
+            font-size: 1.5em;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--highlight-color);
+        }
+
+        .payment {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .schedule {
+            background-color: var(--schedule-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--footer-bg);
+            color: var(--footer-color);
+            font-size: 1.1em;
+        }
+
+        /* Dark Mode Variables */
+        :root {
+            --primary-color: #0d3b66;
+            --secondary-color: #f95738;
+            --highlight-color: #ff6b6b;
+            --container-bg: #fff;
+            --schedule-bg: #f1f1f1;
+            --footer-bg: #0d3b66;
+            --footer-color: #fff;
+        }
+
+        body.dark-mode {
+            --primary-color: #99f2c8;
+            --secondary-color: #ff6b6b;
+            --highlight-color: #f95738;
+            --container-bg: #222;
+            --schedule-bg: #333;
+            --footer-bg: #222;
+            --footer-color: #99f2c8;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        /* Name Styling */
+        .name {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: var(--highlight-color);
+        }
+
+        .writer {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            text-align: right;
+        }
+
+        /* Toggle Button */
+        .toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-btn:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="toggle-btn" id="toggle-mode">🌙 Dark Mode</button>
+    <div class="container">
+        <h1>STEM Channel Moderator Proposal</h1>
+        <p>Hi <span class="name">@Gere_W</span></p>
+        <p>Thank you for considering me as a moderator. My goal is to grow your Telegram channel focused on <span
+                class="highlight">Science, Technology, Engineering, and Math (STEM)</span> by creating a deeper
+            understanding of these subjects while keeping the community engaged and organized.</p>
+
+        <h2>Plan & Responsibilities</h2>
+        <ul>
+            <li><strong>Content Focus:</strong> Ensure all posts are accurate, educational, and stimulate discussion on
+                STEM topics.</li>
+            <li><strong>Moderation:</strong> Remove spam, off-topic messages, and enforce rules fairly.</li>
+            <li><strong>Engagement:</strong> Initiate discussions, polls, and challenges to boost interaction.</li>
+            <li><strong>Reporting:</strong> Weekly updates on engagement, member growth, and discussion quality.</li>
+            <li><strong>quize: i will add quizes and attractive real world STEM questions .</strong></li>
+        </ul>
+
+        <h2>Time Schedule</h2>
+        <div class="schedule">
+            <ul>
+                <li>Active moderation 3 times per week.</li>
+                <li>Posts and engagement checks daily when content is published.</li>
+                <li>Weekly review meeting to discuss improvements and feedback.</li>
+            </ul>
+        </div>
+
+        <h2>Growth Strategy</h2>
+        <ul>
+            <li>Share forwardable, high-value educational content.</li>
+            <li>Encourage members to discuss STEM problems and solutions.</li>
+            <li>Track engagement metrics to optimize post timing and content type.</li>
+        </ul>
+
+        <h2>Payment & Service</h2>
+        <div class="payment">
+            Proposed rate: <span class="highlight">3 active sessions per week – $13 per week</span>.
+            <br>
+            Flexible options can be discussed based on growth and engagement.
+        </div>
+
+        <p><strong>Science, Technology, Engineering, and Math are more than subjects — they are tools to understand and transform the world</strong></p>
+
+        <p>Looking forward to your feedback and getting started.</p>
+        <p class="writer">Writer:<br>KIDANU TESSEMA</p>
+    </div>
+    <footer>
+        <h3>If you have any ideas on time schedule and payment service, let me know!</h3>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById("toggle-mode");
+        const body = document.body;
+
+        toggleBtn.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            toggleBtn.textContent = body.classList.contains("dark-mode") ? "☀️ Day Mode" : "🌙 Dark Mode";
+        });
+    </script>
+</body>
+
+</html>
